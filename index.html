@@ -1,0 +1,1990 @@
+<script src="https://cdn01.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.32527" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.32527" type="text/javascript"></script>
+<script defer src="https://cdn01.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.32527" type="text/javascript"></script>
+<script defer src="https://cdn02.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.32527" type="text/javascript"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+<script src="https://cdn03.jotfor.ms/js/payments/PaymentListSettings/searchInProducts.js?v=3.3.32527" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/js/payments/minTotalOrderAmountValidation.js?v=3.3.32527" type="text/javascript"></script>
+
+<style type="text/css">
+    @media print {
+        .form-section {
+            display: inline!important
+        }
+        .form-pagebreak {
+            display: none!important
+        }
+        .form-section-closed {
+            height: auto!important
+        }
+        .page-section {
+            position: initial!important
+        }
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f30e2a790832f3e96009402" />
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.32527" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.32527" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+    /*PREFERENCES STYLE*/
+    
+    .form-all {
+        font-family: Inter, sans-serif;
+    }
+    
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+        font-family: Inter, sans-serif;
+    }
+    
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+        font-family: Inter, sans-serif;
+    }
+    
+    .form-header-group {
+        font-family: Inter, sans-serif;
+    }
+    
+    .form-label {
+        font-family: Inter, sans-serif;
+    }
+    
+    .form-label.form-label-auto {
+        display: block;
+        float: none;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .form-line {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .form-all {
+        max-width: 752px;
+        width: 100%;
+    }
+    
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+        width: 230px;
+    }
+    
+    .form-all {
+        font-size: 16px
+    }
+    
+    .form-all .qq-upload-button,
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+        font-size: 16px
+    }
+    
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+        font-size: 16px
+    }
+    
+    .supernova .form-all,
+    .form-all {
+        background-color: #fff;
+        border: 1px solid transparent;
+    }
+    
+    .form-all {
+        color: #2C3345;
+    }
+    
+    .form-header-group .form-header {
+        color: #2C3345;
+    }
+    
+    .form-header-group .form-subHeader {
+        color: #2C3345;
+    }
+    
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label {
+        color: #2C3345;
+    }
+    
+    .form-sub-label {
+        color: #464d5f;
+    }
+    
+    .supernova {
+        background-color: #ecedf3;
+    }
+    
+    .supernova body {
+        background: transparent;
+    }
+    
+    .form-textbox,
+    .form-textarea,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+        background-color: #fff;
+    }
+    
+    .supernova {
+        height: 100%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: center top;
+    }
+    
+    .supernova {
+        background-image: url("https://www.jotform.com/uploads/EdwardWrighton/form_files/flowers2.jpg");
+    }
+    
+    #stage {
+        background-image: url("https://www.jotform.com/uploads/EdwardWrighton/form_files/flowers2.jpg");
+    }
+    
+    .form-all {
+        background-image: none;
+    }
+    
+    .ie-8 .form-all:before {
+        display: none;
+    }
+    
+    .ie-8 {
+        margin-top: auto;
+        margin-top: initial;
+    }
+    /*PREFERENCES STYLE*/
+    /*PREFERENCES STYLE*/
+    /* NEW THEME STYLE */
+    
+    .form-all {
+        margin-top: 72px;
+        background-color: undefined;
+        box-shadow: undefined
+    }
+    
+    .form-line-active {
+        background-color: undefined;
+    }
+    
+    .form-line-error {
+        background-color: undefined;
+    }
+    
+    .form-line-error input:not(#coupon-input):not(.form-validation-error) {
+        border-color: undefined;
+    }
+    
+    .form-label {
+        color: undefined;
+    }
+    
+    .form-sub-label {
+        color: undefined;
+    }
+    
+    .form-dropdown,
+    .form-textarea,
+    .form-textbox,
+    .form-checkbox+label:before,
+    .form-radio+label:before,
+    .form-radio+span:before,
+    .form-checkbox+span:before {
+        border-color: undefined;
+        background-color: undefined;
+        color: undefined;
+    }
+    
+    .form-textbox::placeholder,
+    .form-dropdown:not(:required),
+    .form-dropdown:required:invalid {
+        color: undefined;
+    }
+    
+    .rating-item label {
+        border-color: undefined;
+        background-color: undefined;
+        color: undefined;
+    }
+    
+    .rating-item-title.for-to>label:first-child,
+    .rating-item-title.for-from>label:first-child,
+    .rating-item-title .editor-container * {
+        background-color: transparent;
+        color: undefined;
+    }
+    
+    .appointmentCalendarContainer .monthYearPicker .pickerItem+.pickerItem {
+        border-left-color: undefined;
+    }
+    
+    .appointmentCalendarContainer {
+        background-color: undefined;
+        border-color: undefined;
+    }
+    
+    .appointmentCalendarContainer .currentDate,
+    .appointmentCalendarContainer .pickerItem .pickerYear,
+    .appointmentCalendarContainer .pickerItem .pickerMonth {
+        color: undefined;
+    }
+    
+    .appointmentCalendar .calendarDay {
+        color: undefined;
+    }
+    
+    .appointmentCalendarContainer .monthYearPicker {
+        border-color: undefined;
+    }
+    
+    .rating-item input:focus+label,
+    .rating-item input:hover+label {
+        color: undefined;
+    }
+    
+    .appointmentCalendar .calendarDay.isUnavailable,
+     ::placeholder {
+        color: undefined;
+    }
+    
+    .form-spinner-button-container>*,
+    .appointmentDayPickerButton,
+    .form-matrix-column-headers,
+    .form-matrix-row-headers {
+        background-color: undefined;
+    }
+    
+    .appointmentCalendar .dayOfWeek {
+        background-color: undefined;
+        color: undefined;
+    }
+    
+    .form-matrix-values {
+        background-color: undefined;
+    }
+    
+    .rating-item input:focus+label,
+    .rating-item input:hover+label {
+        color: undefined;
+        background-color: undefined;
+        border-color: undefined;
+    }
+    
+    .rating-item input:checked+label {
+        background-color: undefined;
+        border-color: undefined;
+        color: #fff;
+    }
+    
+    .form-dropdown:hover,
+    .form-textarea:hover,
+    .form-textbox:hover,
+    .form-checkbox:hover+label:before,
+    .form-radio:hover+label:before {
+        border-color: undefined;
+        box-shadow: undefined;
+    }
+    
+    .form-dropdown:focus,
+    .form-textarea:focus,
+    .form-textbox:focus,
+    .form-checkbox:focus+label:before,
+    .form-radio:focus+label:before {
+        border-color: undefined;
+        box-shadow: undefined;
+    }
+    
+    .form-matrix-column-headers,
+    .form-matrix-table td,
+    .form-matrix-table td:last-child,
+    .form-matrix-table th,
+    .form-matrix-table th:last-child,
+    .form-matrix-table tr:last-child td,
+    .form-matrix-table tr:last-child th,
+    .form-matrix-table tr:not([role=group])+tr[role=group] th,
+    .form-matrix-column-headers,
+    .form-matrix-table td,
+    .form-matrix-table td:last-child,
+    .form-matrix-table th,
+    .form-matrix-table th:last-child,
+    .form-matrix-table tr:last-child td,
+    .form-matrix-table tr:last-child th,
+    .form-matrix-table tr:not([role=group])+tr[role=group] th {
+        border-color: undefined;
+        color: undefined;
+    }
+    
+    .form-matrix-headers.form-matrix-column-headers,
+    .isSelected .form-matrix-column-headers:nth-last-of-type(2) {
+        border-color: undefined;
+    }
+    
+    .form-radio:checked+label:after {
+        background-color: undefined;
+    }
+    
+    .form-checkbox:checked+label:before {
+        background-color: undefined;
+        border-color: undefined;
+    }
+    
+    .form-radio:checked+label:before {
+        border-color: undefined;
+    }
+    
+    .form-header {
+        color: undefined;
+    }
+    
+    .jSignature,
+    .signature-pad-passive {
+        border-color: undefined;
+        background-image: undefined;
+    }
+    
+    .form-header-group .form-subHeader {
+        color: undefined;
+    }
+    
+    .form-header-group {
+        border-color: undefined;
+    }
+    
+    .header-large {
+        color: undefined;
+        border-color: undefined;
+    }
+    
+    li[data-type="control_text"] .form-html {
+        color: undefined;
+    }
+    
+    li[data-type="control_datetime"] .extended .allowTime-container+.form-sub-label-container {
+        background-color: undefined;
+    }
+    
+    .submit-button {
+        background-color: undefined;
+        border-color: undefined;
+    }
+    
+    .submit-button:hover {
+        background-color: undefined;
+        border-color: undefined;
+    }
+    
+    .form-sacl-button,
+    form-submit-print {
+        color: undefined;
+        border-color: undefined;
+    }
+    
+    .form-pagebreak-back {
+        background-color: undefined;
+        border-color: undefined;
+    }
+    
+    .form-pagebreak-back:hover {
+        background-color: undefined;
+        border-color: undefined;
+    }
+    
+    .form-pagebreak-next {
+        background-color: undefined;
+        border-color: undefined;
+    }
+    
+    .form-pagebreak-next:hover {
+        background-color: undefined;
+        border-color: undefined;
+    }
+    
+    .form-pagebreak,
+    .form-pagebreak>div {
+        border-color: undefined;
+    }
+    
+    .form-buttons-wrapper,
+    .form-pagebreak,
+    .form-submit-clear-wrapper {
+        border-color: undefined;
+    }
+    
+    li[data-type=control_datetime] [data-wrapper-react=true].extended>div+.form-sub-label-container .form-textbox:placeholder-shown,
+    li[data-type=control_datetime] [data-wrapper-react=true]:not(.extended) .form-textbox:not(.time-dropdown):placeholder-shown,
+    .appointmentCalendarContainer .currentDate {
+        background-image: undefined;
+    }
+    
+    div.stageEmpty.isSmall {
+        border-color: undefined;
+        color: undefined;
+    }
+    /* NEW THEME STYLE */
+    /*PREFERENCES STYLE*/
+    /*__INSPECT_SEPERATOR__*/
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" action="https://submit.jotform.com/submit/221006907023544/" method="post" name="form_221006907023544" id="221006907023544" accept-charset="utf-8" autocomplete="on">
+    <input type="hidden" name="formID" value="221006907023544" />
+    <input type="hidden" id="JWTContainer" value="" />
+    <input type="hidden" id="cardinalOrderNumber" value="" />
+    <div role="main" class="form-all">
+        <style>
+            .form-all:before {
+                background: none;
+            }
+        </style>
+        <ul class="form-section page-section">
+            <li id="cid_1" class="form-input-wide" data-type="control_head">
+                <div class="form-header-group  header-large">
+                    <div class="header-text httac htvam">
+                        <h1 id="header_1" class="form-header" data-component="header">
+                            Festival Food Order Template
+                        </h1>
+                    </div>
+                </div>
+            </li>
+            <li class="form-line card-3col" data-type="control_payment" id="id_3" data-payment="true">
+                <label class="form-label form-label-top search-enabled category-enabled p-filter-two-column" id="label_3" for="input_3"> Menu </label>
+                <div id="cid_3" class="form-input-wide" data-layout="full">
+                    <div data-wrapper-react="true">
+                        <div data-wrapper-react="true" class="product-container-wrapper">
+                            <div class="filter-container">
+                                <div class="multi-select-dropdown category-title-enabled hasSelectAll" id="payment-category-dropdown">
+                                    <div class="dropdown-container">
+                                        <div class="select-area" tabindex="0" role="button" aria-expanded="false">
+                                            <span class="dropdown-hint">
+                        Categories:
+                      </span>
+                                            <span class="selected-values">
+                        All
+                      </span>
+                                            <i class="icon">
+                      </i>
+                                        </div>
+                                        <div class="select-content">
+                                            <div class="options">
+                                                <div aria-label="Categories:" class="option selected">
+                                                    <input type="checkbox" checked="" value="All" />
+                                                    <span>
+                            All
+                          </span>
+                                                </div>
+                                                <div aria-label="Categories:" class="option ">
+                                                    <input type="checkbox" value="2001" />
+                                                    <span>
+                            Desserts
+                          </span>
+                                                </div>
+                                                <div aria-label="Categories:" class="option ">
+                                                    <input type="checkbox" value="2002" />
+                                                    <span>
+                            Food
+                          </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="text" name="productSearch-input" class="form-textbox" id="productSearch-input" size="15" placeholder="Search" autoComplete="off" />
+                            </div>
+                            <input type="hidden" name="simple_fpc" data-payment_type="payment" data-component="payment1" value="3" />
+                            <input type="hidden" name="payment_total_checksum" id="payment_total_checksum" data-component="payment2" />
+                            <div id="image-overlay" class="overlay-content" style="display:none">
+                                <img id="current-image" />
+                                <span class="lb-prev-button">
+                  prev
+                </span>
+                                <span class="lb-next-button">
+                  next
+                </span>
+                                <span class="lb-close-button">
+                  ( X )
+                </span>
+                                <span class="image-overlay-product-container">
+                  <ul class="form-overlay-item" hasicon="false" hasimages="false">
+                  </ul>
+                  <ul class="form-overlay-item" pid="1000" hasicon="false" hasimages="true" iconvalue="">
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/chocolate mint.jpg" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/vanilla cupcake.jpg" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/strawberry cupcake.jpg" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/cookie.jpg" />
+                    </li>
+                  </ul>
+                  <ul class="form-overlay-item" pid="1001" hasicon="false" hasimages="true" iconvalue="">
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/vanilla2.jpg" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/chocolate.jpg" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/chocoliate sandwich.jpg" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/strawberry2.jpg" />
+                    </li>
+                  </ul>
+                  <ul class="form-overlay-item" pid="1002" hasicon="false" hasimages="true" iconvalue="">
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/berrycupcake.jpg" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/kiwicupcake.jpg" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/orangecupcake.jpg" />
+                    </li>
+                  </ul>
+                  <ul class="form-overlay-item" pid="1003" hasicon="false" hasimages="true" iconvalue="">
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/Screen Shot 2020-07-10 at 5.54.12 PM.png" />
+                    </li>
+                  </ul>
+                  <ul class="form-overlay-item" hasicon="false" hasimages="false">
+                  </ul>
+                  <ul class="form-overlay-item" pid="1004" hasicon="false" hasimages="true" iconvalue="">
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/pepperroni.jpg" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/shrimp-pizza.jpg" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/pizza-margerita.jpg" />
+                    </li>
+                  </ul>
+                  <ul class="form-overlay-item" pid="1005" hasicon="false" hasimages="true" iconvalue="">
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/salami-sandwich-ingredients_98292-3568.jpg" />
+                    </li>
+                  </ul>
+                  <ul class="form-overlay-item" pid="1006" hasicon="false" hasimages="true" iconvalue="">
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/Screen Shot 2020-07-10 at 10.29.43 PM.png" />
+                    </li>
+                  </ul>
+                  <ul class="form-overlay-item" pid="1007" hasicon="false" hasimages="true" iconvalue="">
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/eggs.png" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/eggs-sausages.png" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/friedeggs.png" />
+                    </li>
+                  </ul>
+                  <ul class="form-overlay-item" pid="1008" hasicon="false" hasimages="true" iconvalue="">
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/Screen Shot 2020-06-11 at 4.41.39 PM.png" />
+                    </li>
+                  </ul>
+                  <ul class="form-overlay-item" pid="1009" hasicon="false" hasimages="true" iconvalue="">
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/boxed-lunches-set_1284-22197 copy.jpg" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/chicken.jpg" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/lunchbox.jpg" />
+                    </li>
+                    <li class="image-overlay-image">
+                      <img src="https://www.jotform.com/uploads/EdwardWrighton/form_files/pizza.jpg" />
+                    </li>
+                  </ul>
+                </span>
+                            </div>
+                            <div data-wrapper-react="true">
+                                <span class="form-product-category-item  " category="2001">
+                  <b>
+                    Desserts
+                  </b>
+                  <span class="selected-items-icon">
+                  </span>
+                                </span>
+
+
+                                <!-- Item 1 -->
+                                <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option show_subtotal new_ui " categories="2001" active-category="2001" pid="1000" aria-labelledby="label_3">
+                                      <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                                        <div class="p_col">
+                                          <div class="p_checkbox">
+                                            <input type="checkbox" class="form-checkbox  form-product-input" id="input_3_1000" name="q3_menu[][id]" value="1000" />
+                                            <div class="checked">
+                                            </div>
+                                            <div class="select_border">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="p_image">
+                                          <div role="img" aria-label="Cupcakes (6 pcs per box)" class="image_area form-product-image-with-options" style="background-image:url(&quot;https://www.jotform.com/uploads/EdwardWrighton/form_files/chocolate%20mint.jpg&quot;)">
+                                            <div class="image_zoom">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div for="input_3_1000" class="form-product-container">
+                                          <span data-wrapper-react="true">
+                                            <div class="title_description">
+                                              <span class="form-product-name" id="product-name-input_3_1000">
+                                                Cupcakes (6 pcs per box)
+                                              </span>
+                                <span class="form-product-description" id="product-name-description-input_3_1000">
+                                                Chocolate Mint, Vanilla Cherry, Strawberry, Cookie
+                                              </span>
+                            </div>
+                            <span class="form-product-details">
+                                              <b>
+                                                <span data-wrapper-react="true">
+                                                  $
+                                                  <span id="input_3_1000_price">
+                                                    5.00
+                                                  </span>
+                            </span>
+                            </b>
+                            </span>
+                            </span>
+                            <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_quantity_1000_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1000][item_0]" id="input_3_quantity_1000_0" style="width: 11vw;">
+                                                <option value="1"> 1 </option>
+                                                <option value="2"> 2 </option>
+                                                <option value="3"> 3 </option>
+                                                <option value="4"> 4 </option>
+                                                <option value="5"> 5 </option>
+                                                <option value="6"> 6 </option>
+                                                <option value="7"> 7 </option>
+                                                <option value="8"> 8 </option>
+                                                <option value="9"> 9 </option>
+                                                <option value="10"> 10 </option>
+                                              </select>
+                                            </span>
+                            </span>
+                            <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_custom_1000_1" style="min-height:13px" aria-hidden="false"> Flavor </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown col-lg-12" name="q3_menu[special_1000][item_1]" id="input_3_custom_1000_1">
+                                                <option value="Chocolate Mint"> Chocolate Mint </option>
+                                                <option value="Vanilla Cherry"> Vanilla Cherry </option>
+                                                <option value="Strawberry"> Strawberry </option>
+                                                <option value="Cookie"> Cookie </option>
+                                              </select>
+                                            </span>
+                            </span>
+                            <br/>
+                            <span class="form-special-subtotal">
+                                            <span class="form-item-subtotal">
+                                              Item subtotal:
+                                            </span>
+                            <span data-wrapper-react="true">
+                                              $
+                                              <span id="input_3_1000_item_subtotal">
+                                                0.00
+                                              </span>
+                            </span>
+                            </span>
+                        </div>
+                        <div class="focus_action_button_container">
+                            <a class="btn-inline-product-delete"> </a>
+                            <a class="btn-inline-product-settings"> </a>
+                        </div>
+                    </div>
+                    </span>
+                    <div class="p_item_separator ">
+                    </div>
+                    <!-- Item 2 -->
+                    <span class="form-product-item hover-product-item on_col2 show_image show_desc show_option show_subtotal new_ui" categories="2001" active-category="2001" pid="1001" aria-labelledby="label_3">
+                                      <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                                        <div class="p_col">
+                                          <div class="p_checkbox">
+                                            <input type="checkbox" class="form-checkbox  form-product-input" id="input_3_1001" name="q3_menu[][id]" value="1001" />
+                                            <div class="checked">
+                                            </div>
+                                            <div class="select_border">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="p_image">
+                                          <div role="img" aria-label="Cookies (10 pcs per box)" class="image_area form-product-image-with-options" style="background-image:url(&quot;https://www.jotform.com/uploads/EdwardWrighton/form_files/vanilla2.jpg&quot;)">
+                                            <div class="image_zoom">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div for="input_3_1001" class="form-product-container">
+                                          <span data-wrapper-react="true">
+                                            <div class="title_description">
+                                              <span class="form-product-name" id="product-name-input_3_1001">
+                                                Cookies (10 pcs per box)
+                                              </span>
+                    <span class="form-product-description" id="product-name-description-input_3_1001">
+                                                Butter Cookie, Chocolate Cookie, Choco Sandwich, Jelly Cookie
+                                              </span>
+                </div>
+                <span class="form-product-details">
+                                              <b>
+                                                <span data-wrapper-react="true">
+                                                  $
+                                                  <span id="input_3_1001_price">
+                                                    5.00
+                                                  </span>
+                </span>
+                </b>
+                </span>
+                </span>
+                <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_quantity_1001_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1001][item_0]" id="input_3_quantity_1001_0" style="width: 11vw;">
+                                                <option value="1"> 1 </option>
+                                                <option value="2"> 2 </option>
+                                                <option value="3"> 3 </option>
+                                                <option value="4"> 4 </option>
+                                                <option value="5"> 5 </option>
+                                                <option value="6"> 6 </option>
+                                                <option value="7"> 7 </option>
+                                                <option value="8"> 8 </option>
+                                                <option value="9"> 9 </option>
+                                                <option value="10"> 10 </option>
+                                              </select>
+                                            </span>
+                </span>
+                <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_custom_1001_1" style="min-height:13px" aria-hidden="false"> Type of Cookies </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1001][item_1]" id="input_3_custom_1001_1">
+                                                <option value="Butter Cookie"> Butter Cookie </option>
+                                                <option value="Chocolate Cookie"> Chocolate Cookie </option>
+                                                <option value="Choco Sandwich"> Choco Sandwich </option>
+                                                <option value="Jelly Cookie"> Jelly Cookie </option>
+                                              </select>
+                                            </span>
+                </span>
+                <br/>
+                <span class="form-special-subtotal">
+                                            <span class="form-item-subtotal">
+                                              Item subtotal:
+                                            </span>
+                <span data-wrapper-react="true">
+                                              $
+                                              <span id="input_3_1001_item_subtotal">
+                                                0.00
+                                              </span>
+                </span>
+                </span>
+    </div>
+    <div class="focus_action_button_container">
+        <a class="btn-inline-product-delete"> </a>
+        <a class="btn-inline-product-settings"> </a>
+    </div>
+    </div>
+    </span>
+    <div class="p_item_separator ">
+    </div>
+    <!-- tem 3 -->
+    <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option show_subtotal new_ui" categories="2001" active-category="2001" pid="1002" aria-labelledby="label_3">
+                                      <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                                        <div class="p_col">
+                                          <div class="p_checkbox">
+                                            <input type="checkbox" class="form-checkbox  form-product-input" id="input_3_1002" name="q3_menu[][id]" value="1002" />
+                                            <div class="checked">
+                                            </div>
+                                            <div class="select_border">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="p_image">
+                                          <div role="img" aria-label="Muffins (6 pcs per box)" class="image_area form-product-image-with-options" style="background-image:url(&quot;https://www.jotform.com/uploads/EdwardWrighton/form_files/berrycupcake.jpg&quot;)">
+                                            <div class="image_zoom">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div for="input_3_1002" class="form-product-container">
+                                          <span data-wrapper-react="true">
+                                            <div class="title_description">
+                                              <span class="form-product-name" id="product-name-input_3_1002">
+                                                Muffins (6 pcs per box)
+                                              </span>
+    <span class="form-product-description" id="product-name-description-input_3_1002">
+                                                Berry Muffin, Kiwi Muffin, Orange Muffin
+                                              </span>
+    </div>
+    <span class="form-product-details">
+                                              <b>
+                                                <span data-wrapper-react="true">
+                                                  $
+                                                  <span id="input_3_1002_price">
+                                                    5.00
+                                                  </span>
+    </span>
+    </b>
+    </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_quantity_1002_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1002][item_0]" id="input_3_quantity_1002_0" style="width: 11vw;">
+                                                <option value="1"> 1 </option>
+                                                <option value="2"> 2 </option>
+                                                <option value="3"> 3 </option>
+                                                <option value="4"> 4 </option>
+                                                <option value="5"> 5 </option>
+                                                <option value="6"> 6 </option>
+                                                <option value="7"> 7 </option>
+                                                <option value="8"> 8 </option>
+                                                <option value="9"> 9 </option>
+                                                <option value="10"> 10 </option>
+                                              </select>
+                                            </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_custom_1002_1" style="min-height:13px" aria-hidden="false"> Flavor </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1002][item_1]" id="input_3_custom_1002_1">
+                                                <option value="Berry Muffin"> Berry Muffin </option>
+                                                <option value="Kiwi Muffin"> Kiwi Muffin </option>
+                                                <option value="Orange Muffin"> Orange Muffin </option>
+                                              </select>
+                                            </span>
+    </span>
+    <br/>
+    <span class="form-special-subtotal">
+                                            <span class="form-item-subtotal">
+                                              Item subtotal:
+                                            </span>
+    <span data-wrapper-react="true">
+                                              $
+                                              <span id="input_3_1002_item_subtotal">
+                                                0.00
+                                              </span>
+    </span>
+    </span>
+    </div>
+    <div class="focus_action_button_container">
+        <a class="btn-inline-product-delete"> </a>
+        <a class="btn-inline-product-settings"> </a>
+    </div>
+    </div>
+    </span>
+    <div class="p_item_separator ">
+    </div>
+    <!-- Item 4 -->
+    <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option show_subtotal new_ui" categories="2001" active-category="2001" pid="1003" aria-labelledby="label_3">
+                                      <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                                        <div class="p_col">
+                                          <div class="p_checkbox">
+                                            <input type="checkbox" class="form-checkbox  form-product-input" id="input_3_1003" name="q3_menu[][id]" value="1003" />
+                                            <div class="checked">
+                                            </div>
+                                            <div class="select_border">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="p_image">
+                                          <div role="img" aria-label="Apple Pie" class="image_area form-product-image-with-options" style="background-image:url(&quot;https://www.jotform.com/uploads/EdwardWrighton/form_files/Screen%20Shot%202020-07-10%20at%205.54.12%20PM.png&quot;)">
+                                            <div class="image_zoom">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div for="input_3_1003" class="form-product-container">
+                                          <span data-wrapper-react="true">
+                                            <div class="title_description">
+                                              <span class="form-product-name" id="product-name-input_3_1003">
+                                                Apple Pie
+                                              </span>
+    <span class="form-product-description" id="product-name-description-input_3_1003">
+                                                With different size options
+                                              </span>
+    </div>
+    <span class="form-product-details">
+                                              <b>
+                                                <span data-wrapper-react="true">
+                                                  $
+                                                  <span id="input_3_1003_price">
+                                                    10.00
+                                                  </span>
+    </span>
+    </b>
+    </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_quantity_1003_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1003][item_0]" id="input_3_quantity_1003_0" style="width: 11vw;">
+                                                <option value="1"> 1 </option>
+                                                <option value="2"> 2 </option>
+                                                <option value="3"> 3 </option>
+                                                <option value="4"> 4 </option>
+                                                <option value="5"> 5 </option>
+                                                <option value="6"> 6 </option>
+                                                <option value="7"> 7 </option>
+                                                <option value="8"> 8 </option>
+                                                <option value="9"> 9 </option>
+                                                <option value="10"> 10 </option>
+                                              </select>
+                                            </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_custom_1003_1" style="min-height:13px" aria-hidden="false"> Size </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1003][item_1]" id="input_3_custom_1003_1">
+                                                <option value="Small"> Small </option>
+                                                <option value="Regular"> Regular </option>
+                                                <option value="Large"> Large </option>
+                                              </select>
+                                            </span>
+    </span>
+    <br/>
+    <span class="form-special-subtotal">
+                                            <span class="form-item-subtotal">
+                                              Item subtotal:
+                                            </span>
+    <span data-wrapper-react="true">
+                                              $
+                                              <span id="input_3_1003_item_subtotal">
+                                                0.00
+                                              </span>
+    </span>
+    </span>
+    </div>
+    <div class="focus_action_button_container">
+        <a class="btn-inline-product-delete"> </a>
+        <a class="btn-inline-product-settings"> </a>
+    </div>
+    </div>
+    </span>
+    <div class="p_item_separator last_p_seperator">
+    </div>
+    <span class="form-product-category-item  last_p_category" category="2002">
+                                      <b>
+                                        Food
+                                      </b>
+                                      <span class="selected-items-icon">
+                                      </span>
+    </span>
+    <!-- Item 5 -->
+    <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option show_subtotal new_ui" categories="2002" active-category="2002" pid="1004" aria-labelledby="label_3">
+                                      <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                                        <div class="p_col">
+                                          <div class="p_checkbox">
+                                            <input type="checkbox" class="form-checkbox  form-product-input" id="input_3_1004" name="q3_menu[][id]" value="1004" />
+                                            <div class="checked">
+                                            </div>
+                                            <div class="select_border">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="p_image">
+                                          <div role="img" aria-label="Pizza" class="image_area form-product-image-with-options" style="background-image:url(&quot;https://www.jotform.com/uploads/EdwardWrighton/form_files/pepperroni.jpg&quot;)">
+                                            <div class="image_zoom">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div for="input_3_1004" class="form-product-container">
+                                          <span data-wrapper-react="true">
+                                            <div class="title_description">
+                                              <span class="form-product-name" id="product-name-input_3_1004">
+                                                Pizza
+                                              </span>
+    <span class="form-product-description" id="product-name-description-input_3_1004">
+                                                Pepperoni, Shrimps, Margherita
+                                              </span>
+    </div>
+    <span class="form-product-details">
+                                              <b>
+                                                <span data-wrapper-react="true">
+                                                  $
+                                                  <span id="input_3_1004_price">
+                                                    10.00
+                                                  </span>
+    </span>
+    </b>
+    </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_quantity_1004_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1004][item_0]" id="input_3_quantity_1004_0" style="width: 11vw;">
+                                                <option value="1"> 1 </option>
+                                                <option value="2"> 2 </option>
+                                                <option value="3"> 3 </option>
+                                                <option value="4"> 4 </option>
+                                                <option value="5"> 5 </option>
+                                                <option value="6"> 6 </option>
+                                                <option value="7"> 7 </option>
+                                                <option value="8"> 8 </option>
+                                                <option value="9"> 9 </option>
+                                                <option value="10"> 10 </option>
+                                              </select>
+                                            </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_custom_1004_1" style="min-height:13px" aria-hidden="false"> Ingredients </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1004][item_1]" id="input_3_custom_1004_1">
+                                                <option value="Pepperoni"> Pepperoni </option>
+                                                <option value="Shrimps"> Shrimps </option>
+                                                <option value="Margherita"> Margherita </option>
+                                              </select>
+                                            </span>
+    </span>
+    <br/>
+    <span class="form-special-subtotal">
+                                            <span class="form-item-subtotal">
+                                              Item subtotal:
+                                            </span>
+    <span data-wrapper-react="true">
+                                              $
+                                              <span id="input_3_1004_item_subtotal">
+                                                0.00
+                                              </span>
+    </span>
+    </span>
+    </div>
+    <div class="focus_action_button_container">
+        <a class="btn-inline-product-delete"> </a>
+        <a class="btn-inline-product-settings"> </a>
+    </div>
+    </div>
+    </span>
+    <div class="p_item_separator ">
+    </div>
+    <!-- Item 6 -->
+    <span class="form-product-item hover-product-item on_col2 show_image show_desc show_option show_subtotal new_ui" categories="2002" active-category="2002" pid="1005" aria-labelledby="label_3">
+                                      <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                                        <div class="p_col">
+                                          <div class="p_checkbox">
+                                            <input type="checkbox" class="form-checkbox  form-product-input" id="input_3_1005" name="q3_menu[][id]" value="1005" />
+                                            <div class="checked">
+                                            </div>
+                                            <div class="select_border">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="p_image">
+                                          <div role="img" aria-label="Sandwich (5 pcs per box)" class="image_area form-product-image-with-options" style="background-image:url(&quot;https://www.jotform.com/uploads/EdwardWrighton/form_files/salami-sandwich-ingredients_98292-3568.jpg&quot;)">
+                                            <div class="image_zoom">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div for="input_3_1005" class="form-product-container">
+                                          <span data-wrapper-react="true">
+                                            <div class="title_description">
+                                              <span class="form-product-name" id="product-name-input_3_1005">
+                                                Sandwich (5 pcs per box)
+                                              </span>
+    <span class="form-product-description" id="product-name-description-input_3_1005">
+                                                You can add extra ingredients
+                                              </span>
+    </div>
+    <span class="form-product-details">
+                                              <b>
+                                                <span data-wrapper-react="true">
+                                                  $
+                                                  <span id="input_3_1005_price">
+                                                    10.00
+                                                  </span>
+    </span>
+    </b>
+    </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_quantity_1005_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1005][item_0]" id="input_3_quantity_1005_0" style="width: 11vw;">
+                                                <option value="1"> 1 </option>
+                                                <option value="2"> 2 </option>
+                                                <option value="3"> 3 </option>
+                                                <option value="4"> 4 </option>
+                                                <option value="5"> 5 </option>
+                                                <option value="6"> 6 </option>
+                                                <option value="7"> 7 </option>
+                                                <option value="8"> 8 </option>
+                                                <option value="9"> 9 </option>
+                                                <option value="10"> 10 </option>
+                                              </select>
+                                            </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_custom_1005_1" style="min-height:13px" aria-hidden="false"> Sandwich Type </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1005][item_1]" id="input_3_custom_1005_1">
+                                                <option value="Chicken"> Chicken </option>
+                                                <option value="Turkey"> Turkey </option>
+                                                <option value="Tuna"> Tuna </option>
+                                              </select>
+                                            </span>
+    </span>
+    <br/>
+    <span class="form-special-subtotal">
+                                            <span class="form-item-subtotal">
+                                              Item subtotal:
+                                            </span>
+    <span data-wrapper-react="true">
+                                              $
+                                              <span id="input_3_1005_item_subtotal">
+                                                0.00
+                                              </span>
+    </span>
+    </span>
+    </div>
+    <div class="focus_action_button_container">
+        <a class="btn-inline-product-delete"> </a>
+        <a class="btn-inline-product-settings"> </a>
+    </div>
+    </div>
+    </span>
+    <div class="p_item_separator ">
+    </div>
+    <!-- Item 7 -->
+    <span class="form-product-item hover-product-item on_col3 show_image show_option show_subtotal new_ui" categories="2002" active-category="2002" pid="1006" aria-labelledby="label_3">
+                                      <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                                        <div class="p_col">
+                                          <div class="p_checkbox">
+                                            <input type="checkbox" class="form-checkbox  form-product-input" id="input_3_1006" name="q3_menu[][id]" value="1006" />
+                                            <div class="checked">
+                                            </div>
+                                            <div class="select_border">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="p_image">
+                                          <div role="img" aria-label="Spaghetti with Meatballs (Good for 6)" class="image_area form-product-image-with-options" style="background-image:url(&quot;https://www.jotform.com/uploads/EdwardWrighton/form_files/Screen%20Shot%202020-07-10%20at%2010.29.43%20PM.png&quot;)">
+                                            <div class="image_zoom">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div for="input_3_1006" class="form-product-container">
+                                          <span data-wrapper-react="true">
+                                            <div class="title_description">
+                                              <span class="form-product-name" id="product-name-input_3_1006">
+                                                Spaghetti with Meatballs (Good for 6)
+                                              </span>
+    <span class="form-product-description" id="product-name-description-input_3_1006">
+                                              </span>
+    </div>
+    <span class="form-product-details">
+                                              <b>
+                                                <span data-wrapper-react="true">
+                                                  $
+                                                  <span id="input_3_1006_price">
+                                                    20.00
+                                                  </span>
+    </span>
+    </b>
+    </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_quantity_1006_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1006][item_0]" id="input_3_quantity_1006_0" style="width: 11vw;">
+                                                <option value="1"> 1 </option>
+                                                <option value="2"> 2 </option>
+                                                <option value="3"> 3 </option>
+                                                <option value="4"> 4 </option>
+                                                <option value="5"> 5 </option>
+                                                <option value="6"> 6 </option>
+                                                <option value="7"> 7 </option>
+                                                <option value="8"> 8 </option>
+                                                <option value="9"> 9 </option>
+                                                <option value="10"> 10 </option>
+                                              </select>
+                                            </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_custom_1006_1" style="min-height:13px" aria-hidden="false"> Extra </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1006][item_1]" id="input_3_custom_1006_1">
+                                                <option value="Parmesan"> Parmesan </option>
+                                              </select>
+                                            </span>
+    </span>
+    <br/>
+    <span class="form-special-subtotal">
+                                            <span class="form-item-subtotal">
+                                              Item subtotal:
+                                            </span>
+    <span data-wrapper-react="true">
+                                              $
+                                              <span id="input_3_1006_item_subtotal">
+                                                0.00
+                                              </span>
+    </span>
+    </span>
+    </div>
+    <div class="focus_action_button_container">
+        <a class="btn-inline-product-delete"> </a>
+        <a class="btn-inline-product-settings"> </a>
+    </div>
+    </div>
+    </span>
+    <div class="p_item_separator ">
+    </div>
+    <!-- Item 8 -->
+    <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option show_subtotal new_ui" categories="2002" active-category="2002" pid="1007" aria-labelledby="label_3">
+                                      <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                                        <div class="p_col">
+                                          <div class="p_checkbox">
+                                            <input type="checkbox" class="form-checkbox  form-product-input" id="input_3_1007" name="q3_menu[][id]" value="1007" />
+                                            <div class="checked">
+                                            </div>
+                                            <div class="select_border">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="p_image">
+                                          <div role="img" aria-label="Eggs" class="image_area form-product-image-with-options" style="background-image:url(&quot;https://www.jotform.com/uploads/EdwardWrighton/form_files/eggs.png&quot;)">
+                                            <div class="image_zoom">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div for="input_3_1007" class="form-product-container">
+                                          <span data-wrapper-react="true">
+                                            <div class="title_description">
+                                              <span class="form-product-name" id="product-name-input_3_1007">
+                                                Eggs
+                                              </span>
+    <span class="form-product-description" id="product-name-description-input_3_1007">
+                                                Boiled Eggs with Bread, Omelette with Sausages, Omelette with Vegetables
+                                              </span>
+    </div>
+    <span class="form-product-details">
+                                              <b>
+                                                <span data-wrapper-react="true">
+                                                  $
+                                                  <span id="input_3_1007_price">
+                                                    5.00
+                                                  </span>
+    </span>
+    </b>
+    </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_quantity_1007_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1007][item_0]" id="input_3_quantity_1007_0" style="width: 11vw;">
+                                                <option value="1"> 1 </option>
+                                                <option value="2"> 2 </option>
+                                                <option value="3"> 3 </option>
+                                                <option value="4"> 4 </option>
+                                                <option value="5"> 5 </option>
+                                                <option value="6"> 6 </option>
+                                                <option value="7"> 7 </option>
+                                                <option value="8"> 8 </option>
+                                                <option value="9"> 9 </option>
+                                                <option value="10"> 10 </option>
+                                              </select>
+                                            </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_custom_1007_1" style="min-height:13px" aria-hidden="false"> Type </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1007][item_1]" id="input_3_custom_1007_1">
+                                                <option value="Boiled Eggs with Bread"> Boiled Eggs with Bread </option>
+                                                <option value="Omelette with Sausages"> Omelette with Sausages </option>
+                                                <option value="Omelette with Vegetables"> Omelette with Vegetables </option>
+                                              </select>
+                                            </span>
+    </span>
+    <br/>
+    <span class="form-special-subtotal">
+                                            <span class="form-item-subtotal">
+                                              Item subtotal:
+                                            </span>
+    <span data-wrapper-react="true">
+                                              $
+                                              <span id="input_3_1007_item_subtotal">
+                                                0.00
+                                              </span>
+    </span>
+    </span>
+    </div>
+    <div class="focus_action_button_container">
+        <a class="btn-inline-product-delete"> </a>
+        <a class="btn-inline-product-settings"> </a>
+    </div>
+    </div>
+    </span>
+    <div class="p_item_separator ">
+    </div>
+    <!-- Item 9 -->
+    <span class="form-product-item hover-product-item on_col2 show_image show_option show_subtotal new_ui" categories="2002" active-category="2002" pid="1008" aria-labelledby="label_3">
+                                      <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                                        <div class="p_col">
+                                          <div class="p_checkbox">
+                                            <input type="checkbox" class="form-checkbox  form-product-input" id="input_3_1008" name="q3_menu[][id]" value="1008" />
+                                            <div class="checked">
+                                            </div>
+                                            <div class="select_border">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="p_image">
+                                          <div role="img" aria-label="Salad with Balsamic Vinegar" class="image_area form-product-image-with-options" style="background-image:url(&quot;https://www.jotform.com/uploads/EdwardWrighton/form_files/Screen%20Shot%202020-06-11%20at%204.41.39%20PM.png&quot;)">
+                                            <div class="image_zoom">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div for="input_3_1008" class="form-product-container">
+                                          <span data-wrapper-react="true">
+                                            <div class="title_description">
+                                              <span class="form-product-name" id="product-name-input_3_1008">
+                                                Salad with Balsamic Vinegar
+                                              </span>
+    <span class="form-product-description" id="product-name-description-input_3_1008">
+                                              </span>
+    </div>
+    <span class="form-product-details">
+                                              <b>
+                                                <span data-wrapper-react="true">
+                                                  $
+                                                  <span id="input_3_1008_price">
+                                                    10.00
+                                                  </span>
+    </span>
+    </b>
+    </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_quantity_1008_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1008][item_0]" id="input_3_quantity_1008_0" style="width: 11vw;">
+                                                <option value="1"> 1 </option>
+                                                <option value="2"> 2 </option>
+                                                <option value="3"> 3 </option>
+                                                <option value="4"> 4 </option>
+                                                <option value="5"> 5 </option>
+                                                <option value="6"> 6 </option>
+                                                <option value="7"> 7 </option>
+                                                <option value="8"> 8 </option>
+                                                <option value="9"> 9 </option>
+                                                <option value="10"> 10 </option>
+                                              </select>
+                                            </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_custom_1008_1" style="min-height:13px" aria-hidden="false"> Extras </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1008][item_1]" id="input_3_custom_1008_1">
+                                                <option value="Chicken"> Chicken </option>
+                                                <option value="Meat"> Meat </option>
+                                                <option value="Seafood"> Seafood </option>
+                                              </select>
+                                            </span>
+    </span>
+    <br/>
+    <span class="form-special-subtotal">
+                                            <span class="form-item-subtotal">
+                                              Item subtotal:
+                                            </span>
+    <span data-wrapper-react="true">
+                                              $
+                                              <span id="input_3_1008_item_subtotal">
+                                                0.00
+                                              </span>
+    </span>
+    </span>
+    </div>
+    <div class="focus_action_button_container">
+        <a class="btn-inline-product-delete"> </a>
+        <a class="btn-inline-product-settings"> </a>
+    </div>
+    </div>
+    </span>
+    <div class="p_item_separator ">
+    </div>
+    <!-- Item 10 -->
+    <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option new_ui" categories="2002" active-category="2002" pid="1009" aria-labelledby="label_3">
+                                      <div data-wrapper-react="true" class="form-product-item-detail new_ui">
+                                        <div class="p_col">
+                                          <div class="p_checkbox">
+                                            <input type="checkbox" class="form-checkbox  form-product-input" id="input_3_1009" name="q3_menu[][id]" value="1009" />
+                                            <div class="checked">
+                                            </div>
+                                            <div class="select_border">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="p_image">
+                                          <div role="img" aria-label="Boxed Meal" class="image_area form-product-image-with-options" style="background-image:url(&quot;https://www.jotform.com/uploads/EdwardWrighton/form_files/boxed-lunches-set_1284-22197%20copy.jpg&quot;)">
+                                            <div class="image_zoom">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div for="input_3_1009" class="form-product-container">
+                                          <span data-wrapper-react="true">
+                                            <div class="title_description">
+                                              <span class="form-product-name" id="product-name-input_3_1009">
+                                                Boxed Meal
+                                              </span>
+    <span class="form-product-description" id="product-name-description-input_3_1009">
+                                                Please select a meal box
+                                              </span>
+    </div>
+    <span class="form-product-details">
+                                              <b>
+                                                <span data-wrapper-react="true">
+                                                  $
+                                                  <span id="input_3_1009_price">
+                                                    5.00
+                                                  </span>
+    </span>
+    </b>
+    </span>
+    </span>
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_quantity_1009_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1009][item_0]" id="input_3_quantity_1009_0" style="width: 11vw;">
+                                                <option value="1"> 1 </option>
+                                                <option value="2"> 2 </option>
+                                                <option value="3"> 3 </option>
+                                                <option value="4"> 4 </option>
+                                                <option value="5"> 5 </option>
+                                                <option value="6"> 6 </option>
+                                                <option value="7"> 7 </option>
+                                                <option value="8"> 8 </option>
+                                                <option value="9"> 9 </option>
+                                                <option value="10"> 10 </option>
+                                              </select>
+                                            </span>
+    </span>
+
+    <span class="form-sub-label-container" style="vertical-align:top">
+                                            <label class="form-sub-label" for="input_3_custom_1009_1" style="min-height:13px" aria-hidden="false"> Meal Type </label>
+                                            <span class="select_cont">
+                                              <select class="form-dropdown" name="q3_menu[special_1009][item_1]" id="input_3_custom_1009_1">
+                                                <option value="Meal 1  - Pasta with Meat"> Meal 1 - Pasta with Meat </option>
+                                                <option value="Meal 2  - Chicken"> Meal 2 - Chicken </option>
+                                                <option value="Meal 3  - Sushi with Eggs"> Meal 3 - Sushi with Eggs </option>
+                                                <option value="Meal 4 - Pizza"> Meal 4 - Pizza </option>
+                                              </select>
+                                            </span>
+    </span>
+    </div>
+    <div class="focus_action_button_container">
+        <a class="btn-inline-product-delete"> </a>
+        <a class="btn-inline-product-settings"> </a>
+    </div>
+    </div>
+    </span>
+
+    <div class="payment_footer new_ui ">
+        <div class="total_area">
+            <span class="form-payment-divider">
+                    </span>
+            <div class="form-payment-subtotal form-payment-label">
+                <div id="subtotal-text">
+                    Subtotal
+                </div>
+                <div class="form-payment-price">
+                    <span data-wrapper-react="true">
+                          $
+                          <span id="payment_subtotal">
+                            0.00
+                          </span>
+                    </span>
+                </div>
+            </div>
+            <div class="form-payment-tax form-payment-label">
+                <div id="tax-text">
+                    Tax
+                </div>
+                <div class="form-payment-price">
+                    <span data-wrapper-react="true">
+                          $
+                          <span id="payment_tax">
+                            0.00
+                          </span>
+                    </span>
+                </div>
+            </div>
+            <div class="form-payment-shipping form-payment-label">
+                <div id="shipping-text">
+                    Shipping
+                </div>
+                <div class="form-payment-price">
+                    <span data-wrapper-react="true">
+                          $
+                          <span id="payment_shipping">
+                            0.00
+                          </span>
+                    </span>
+                </div>
+            </div>
+            <span class="form-payment-divider" style="margin:8px 0">
+                    </span>
+            <div class="form-payment-total">
+                <div id="total-text">
+                    Total
+                </div>
+                <div class="form-payment-price">
+                    <span data-wrapper-react="true">
+                          $
+                          <span id="payment_total">
+                            0.00
+                          </span>
+                    </span>
+                </div>
+            </div>
+            <input type="hidden" name="minTotalOrderAmount" data-min-amount="5" value="5" />
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li class="form-line" data-type="control_divider" id="id_4">
+        <div id="cid_4" class="form-input-wide" data-layout="full">
+            <div class="divider" aria-label="Divider" data-component="divider" style="border-bottom-width:1px;border-bottom-style:solid;border-color:#e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px">
+            </div>
+        </div>
+    </li>
+    <li class="form-line" data-type="control_radio" id="id_10">
+        <label class="form-label form-label-top form-label-auto" id="label_10" for="input_10"> Type a question </label>
+        <div id="cid_10" class="form-input-wide" data-layout="full">
+            <div class="form-multiple-column" data-columncount="2" role="group" aria-labelledby="label_10" data-component="radio">
+                <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+                <input type="radio" aria-describedby="label_10" class="form-radio" id="input_10_0" name="q10_typeA" value="Cash" />
+                <label id="label_input_10_0" for="input_10_0"> Cash </label>
+                </span>
+                <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+                <input type="radio" aria-describedby="label_10" class="form-radio" id="input_10_1" name="q10_typeA" value="Credit Card" />
+                <label id="label_input_10_1" for="input_10_1"> Credit Card </label>
+                </span>
+                <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+                <input type="radio" aria-describedby="label_10" class="form-radio" id="input_10_2" name="q10_typeA" value="PayPal" />
+                <label id="label_input_10_2" for="input_10_2"> PayPal </label>
+                </span>
+                <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+                <input type="radio" aria-describedby="label_10" class="form-radio" id="input_10_3" name="q10_typeA" value="Check" />
+                <label id="label_input_10_3" for="input_10_3"> Check </label>
+                </span>
+                <span class="form-radio-item" style="clear:left">
+              <span class="dragger-item">
+              </span>
+                <input type="radio" aria-describedby="label_10" class="form-radio" id="input_10_4" name="q10_typeA" value="Bank Transfer" />
+                <label id="label_input_10_4" for="input_10_4"> Bank Transfer </label>
+                </span>
+                <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+                <input type="radio" aria-describedby="label_10" class="form-radio" id="input_10_5" name="q10_typeA" value="Purchase Order" />
+                <label id="label_input_10_5" for="input_10_5"> Purchase Order </label>
+                </span>
+            </div>
+        </div>
+    </li>
+    <li class="form-line" data-type="control_datetime" id="id_13">
+        <label class="form-label form-label-top form-label-auto" id="label_13" for="lite_mode_13"> Date Ordered </label>
+        <div id="cid_13" class="form-input-wide" data-layout="half">
+            <div data-wrapper-react="true">
+                <div style="display:none">
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="month_13" name="q13_dateOrdered[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="04" autoComplete="section-input_13 off" aria-labelledby="label_13 sublabel_13_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                    <label class="form-sub-label" for="month_13" id="sublabel_13_month" style="min-height:13px" aria-hidden="false"> Month </label>
+                    </span>
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="currentDate form-textbox validate[limitDate]" id="day_13" name="q13_dateOrdered[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="11" autoComplete="section-input_13 off" aria-labelledby="label_13 sublabel_13_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                    <label class="form-sub-label" for="day_13" id="sublabel_13_day" style="min-height:13px" aria-hidden="false"> Day </label>
+                    </span>
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="year_13" name="q13_dateOrdered[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="2022" autoComplete="section-input_13 off" aria-labelledby="label_13 sublabel_13_year" />
+                <label class="form-sub-label" for="year_13" id="sublabel_13_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+                </div>
+                <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_13" size="12" data-maxlength="12" maxLength="12" data-age="" value="04-11-2022" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" autoComplete="section-input_13 off" aria-labelledby="label_13 sublabel_13_litemode" />
+              <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_13_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" />
+              <label class="form-sub-label" for="lite_mode_13" id="sublabel_13_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
+            </span>
+            </div>
+        </div>
+    </li>
+    <li class="form-line" data-type="control_dropdown" id="id_14">
+        <label class="form-label form-label-top form-label-auto" id="label_14" for="input_14"> Order Type </label>
+        <div id="cid_14" class="form-input-wide" data-layout="half">
+            <select class="form-dropdown" id="input_14" name="q14_orderType" style="width:310px" data-component="dropdown">
+            <option value=""> Please Select </option>
+            <option value="Delivery"> Delivery </option>
+            <option value="Pick-up"> Pick-up </option>
+          </select>
+        </div>
+    </li>
+    <li class="form-line allowTime" data-type="control_datetime" id="id_15">
+        <label class="form-label form-label-top" id="label_15" for="lite_mode_15"> Pick-up/Delivery Date</label>
+        <div id="cid_15" class="form-input-wide" data-layout="full">
+            <div data-wrapper-react="true" class="extended">
+                <div style="display:none">
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="month_15" name="q15_pickupdeliveryDate[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_15 off" aria-labelledby="label_15 sublabel_15_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                    <label class="form-sub-label" for="month_15" id="sublabel_15_month" style="min-height:13px" aria-hidden="false"> Month </label>
+                    </span>
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="day_15" name="q15_pickupdeliveryDate[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_15 off" aria-labelledby="label_15 sublabel_15_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                    <label class="form-sub-label" for="day_15" id="sublabel_15_day" style="min-height:13px" aria-hidden="false"> Day </label>
+                    </span>
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="year_15" name="q15_pickupdeliveryDate[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" autoComplete="section-input_15 off" aria-labelledby="label_15 sublabel_15_year" />
+                <label class="form-sub-label" for="year_15" id="sublabel_15_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+                </div>
+                <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_15" size="12" data-maxlength="12" maxLength="12" data-age="" value="" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" autoComplete="section-input_15 off" aria-labelledby="label_15 sublabel_15_litemode" />
+              <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_15_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="Yes" data-version="v2" />
+              <label class="form-sub-label" for="lite_mode_15" id="sublabel_15_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
+            </span>
+
+            </div>
+        </div>
+    </li>
+    <!-- time start -->
+    <style>
+        .hourV {
+            list-style-type: none;
+            padding: 5px 10px;
+            margin: 5px 0;
+            background-color: #94bff78e;
+            border-radius: 5px;
+            width: fit-content;
+        }
+        
+        .min {
+            list-style-type: none;
+            padding: 5px 10px;
+            margin: 5px 0;
+            background-color: #94bff78e;
+            border-radius: 5px;
+            width: fit-content;
+        }
+        
+        .hourV:hover {
+            cursor: pointer;
+        }
+        
+        .min:hover {
+            cursor: pointer;
+        }
+        
+        .hourV:active {
+            background-color: #749dcf8e;
+        }
+        
+        .min:active {
+            background-color: #749dcf8e;
+        }
+        
+        .containerBox {
+            /* border: 1px solid green; */
+            width: fit-content;
+            font-family: 'cursive', Arial, sans-serif, cursive;
+        }
+        
+        .time {
+            height: 80px;
+            width: 70px;
+            overflow-y: auto;
+            border: 1px solid rgba(184, 182, 182, 0.623);
+            margin: -3px 0 0 0;
+            border-radius: 5px;
+        }
+        
+        .BTH {
+            width: 50px;
+            padding: 3px 3px;
+            margin-top: 1px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+        .hoursCon {
+            float: left;
+            margin: 0 32px 0 0;
+        }
+        
+        .minsCon {
+            float: right;
+        }
+        /* .min {
+          margin: 0;
+      }
+      
+      .mins {
+          margin: 0;
+      } */
+        
+        .time::-webkit-scrollbar {
+            width: 12px;
+            /* width of the entire scrollbar */
+        }
+        
+        .time::-webkit-scrollbar-track {
+            background: #ffffff;
+            /* color of the tracking area */
+        }
+        
+        .time::-webkit-scrollbar-thumb {
+            background-color: rgba(153, 151, 151, 0.774);
+            /* color of the scroll thumb */
+            border-radius: 20px;
+            /* roundness of the scroll thumb */
+            border: 3px solid #ffffff;
+            /* creates padding around scroll thumb */
+        }
+        
+        .disable {
+            cursor: not-allowed;
+            color: rgba(172, 169, 169, 0.74);
+            background-color: rgb(75, 68, 68);
+        }
+        
+        .disable:hover {
+            cursor: not-allowed;
+        }
+        
+        .disable:active {
+            color: rgba(172, 169, 169, 0.74);
+            background-color: rgb(75, 68, 68);
+        }
+        
+        .hide {
+            visibility: hidden;
+        }
+    </style>
+    <li class="form-line allowTime" data-type="control_time">
+        <label class="form-label form-label-top"> Pick-up/Delivery Time </label>
+        <div class="form-input-wide" data-layout="full">
+            <span class="allowTime-container timeAMPM">
+            
+              <div class="containerBox" id="containerBox">
+                <p class="hold" id="hold" style="text-align: center; padding: 5px 0; border-radius: 5px; font-size: 20px; border:1px solid #749dcf8e;">
+                    <span id="hourSpan">00</span> :
+            <span id="minSpan">00</span>
+            </p>
+            <div class="box" id="box">
+                <div class="time hoursCon">
+                    <ul id="hour" class="BTH">
+                        <li value="01" class="hourV" id="hour1">01</li>
+                        <li value="02" class="hourV" id="hour2">02</li>
+                        <li value="03" class="hourV" id="hour3">03</li>
+                        <li value="04" class="hourV" id="hour4">04</li>
+                        <li value="05" class="hourV" id="hour5">05</li>
+                        <li value="06" class="hourV" id="hour6">06</li>
+                        <li value="07" class="hourV" id="hour7">07</li>
+                        <li value="08" class="hourV" id="hour8">08</li>
+                        <li value="09" class="hourV" id="hour9">09</li>
+                        <li value="10" class="hourV" id="hour10">10</li>
+                        <li value="11" class="hourV" id="hour11">11</li>
+                        <li value="12" class="hourV" id="hour12">12</li>
+                    </ul>
+
+                </div>
+                <div class="time" id="minsCon">
+
+                    <ul id="mins" class="BTH minute">
+                        <li value="00" class="min" id="min0">00</li>
+                        <li value="05" class="min" id="min5">05</li>
+                        <li value="10" class="min" id="min10">10</li>
+                        <li value="15" class="min" id="min15">15</li>
+                        <li value="20" class="min" id="min20">20</li>
+                        <li value="25" class="min" id="min25">25</li>
+                        <li value="30" class="min" id="min30">30</li>
+                        <li value="35" class="min" id="min35">35</li>
+                        <li value="40" class="min" id="min40">40</li>
+                        <li value="45" class="min" id="min45">45</li>
+                        <li value="50" class="min" id="min50">50</li>
+                        <li value="55" class="min" id="min55">55</li>
+
+                    </ul>
+                </div>
+            </div>
+            <p class="hide text-danger" id="warn">Please select delivery time</p>
+        </div>
+        </span>
+        </div>
+    </li>
+    <!-- time stop -->
+    <li id="cid_9" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+            <div class="header-text httal htvam">
+                <h1 id="header_9" class="form-header" data-component="header">
+                    Customer Information
+                </h1>
+            </div>
+        </div>
+    </li>
+    <li class="form-line" data-type="control_fullname" id="id_5">
+        <label class="form-label form-label-top form-label-auto" id="label_5" for="first_5"> Name </label>
+        <div id="cid_5" class="form-input-wide" data-layout="full">
+            <div data-wrapper-react="true">
+                <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <input type="text" id="first_5" name="q5_name[first]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_5 given-name" size="10" value="" data-component="first" aria-labelledby="label_5 sublabel_5_first" />
+              <label class="form-sub-label" for="first_5" id="sublabel_5_first" style="min-height:13px" aria-hidden="false"> First Name </label>
+            </span>
+                <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+              <input type="text" id="last_5" name="q5_name[last]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_5 family-name" size="15" value="" data-component="last" aria-labelledby="label_5 sublabel_5_last" />
+              <label class="form-sub-label" for="last_5" id="sublabel_5_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
+            </span>
+            </div>
+        </div>
+    </li>
+    <li class="form-line" data-type="control_phone" id="id_8">
+        <label class="form-label form-label-top form-label-auto" id="label_8" for="input_8_full"> Phone Number </label>
+        <div id="cid_8" class="form-input-wide" data-layout="half">
+            <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="tel" id="input_8_full" name="q8_phoneNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue="" autoComplete="section-input_8 tel-national" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_8" />
+            <label class="form-sub-label is-empty" for="input_8_full" id="sublabel_8_masked" style="min-height:13px" aria-hidden="false">  </label>
+          </span>
+        </div>
+    </li>
+    <li class="form-line" data-type="control_email" id="id_6">
+        <label class="form-label form-label-top form-label-auto" id="label_6" for="input_6"> Email </label>
+        <div id="cid_6" class="form-input-wide" data-layout="half">
+            <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="email" id="input_6" name="q6_email" class="form-textbox validate[Email]" data-defaultvalue="" style="width:310px" size="310" value="" data-component="email" aria-labelledby="label_6 sublabel_input_6" />
+            <label class="form-sub-label" for="input_6" id="sublabel_input_6" style="min-height:13px" aria-hidden="false"> example@example.com </label>
+          </span>
+        </div>
+    </li>
+    <li class="form-line" data-type="control_address" id="id_7">
+        <label class="form-label form-label-top form-label-auto" id="label_7" for="input_7_addr_line1"> Address </label>
+        <div id="cid_7" class="form-input-wide" data-layout="full">
+            <div summary="" class="form-address-table jsTest-addressField">
+                <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+                    <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_7_addr_line1" name="q7_address[addr_line1]" class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_7 address-line1" value="" data-component="address_line_1" aria-labelledby="label_7 sublabel_7_addr_line1" required="" />
+                  <label class="form-sub-label" for="input_7_addr_line1" id="sublabel_7_addr_line1" style="min-height:13px" aria-hidden="false"> Street Address </label>
+                </span>
+                    </span>
+                </div>
+                <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+                    <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_7_addr_line2" name="q7_address[addr_line2]" class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_7 address-line2" value="" data-component="address_line_2" aria-labelledby="label_7 sublabel_7_addr_line2" />
+                  <label class="form-sub-label" for="input_7_addr_line2" id="sublabel_7_addr_line2" style="min-height:13px" aria-hidden="false"> Street Address Line 2 </label>
+                </span>
+                    </span>
+                </div>
+                <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+                    <span class="form-address-line form-address-city-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_7_city" name="q7_address[city]" class="form-textbox form-address-city" data-defaultvalue="" autoComplete="section-input_7 address-level2" value="" data-component="city" aria-labelledby="label_7 sublabel_7_city" required="" />
+                  <label class="form-sub-label" for="input_7_city" id="sublabel_7_city" style="min-height:13px" aria-hidden="false"> City </label>
+                </span>
+                    </span>
+                    <span class="form-address-line form-address-state-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_7_state" name="q7_address[state]" class="form-textbox form-address-state" data-defaultvalue="" autoComplete="section-input_7 address-level1" value="" data-component="state" aria-labelledby="label_7 sublabel_7_state" required="" />
+                  <label class="form-sub-label" for="input_7_state" id="sublabel_7_state" style="min-height:13px" aria-hidden="false"> State / Province </label>
+                </span>
+                    </span>
+                </div>
+                <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+                    <span class="form-address-line form-address-zip-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_7_postal" name="q7_address[postal]" class="form-textbox form-address-postal" data-defaultvalue="" autoComplete="section-input_7 postal-code" value="" data-component="zip" aria-labelledby="label_7 sublabel_7_postal" required="" />
+                  <label class="form-sub-label" for="input_7_postal" id="sublabel_7_postal" style="min-height:13px" aria-hidden="false"> Postal / Zip Code </label>
+                </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="form-line" data-type="control_textarea" id="id_12">
+        <label class="form-label form-label-top" id="label_12" for="input_12"> Any food allergies? If yes, please indicate them below: </label>
+        <div id="cid_12" class="form-input-wide" data-layout="full">
+            <textarea id="input_12" class="form-textarea" name="q12_anyFood" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_12"></textarea>
+        </div>
+    </li>
+    <li class="form-line" data-type="control_text" id="id_11">
+        <div id="cid_11" class="form-input-wide" data-layout="full">
+            <div id="text_11" class="form-html" data-component="text">
+                <strong>IMPORTANT NOTES</strong> We'll confirm your orders within 24-48 hours after the submission. Shipping fees and taxes are applied to every transaction. Kindly make sure that the address entered in the form is correct and accurate.
+            </div>
+        </div>
+    </li>
+    <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide" data-layout="full">
+            <div data-align="center" class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField">
+                <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="" onclick="disable();">
+              Order Now
+            </button>
+            </div>
+        </div>
+    </li>
+    <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+    </li>
+    </ul>
+    </div>
+
+    <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="221006907023544" />
+
+    <div class="formFooter-heightMask">
+    </div>
+    <div class="formFooter f6 branding21">
+        <div class="formFooter-wrapper formFooter-leftSide">
+            <a href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=221006907023544&utm_content=jotform_logo&utm_campaign=powered_by_jotform_le" target="_blank" class="formFooter-logoLink"><img class="formFooter-logo" src="https://cdn.jotfor.ms/assets/img/logo2021/jotform-logo-white.svg" alt="Jotform Logo" style="height: 44px;"></a>
+        </div>
+        <div class="formFooter-wrapper formFooter-rightSide">
+            <span class="formFooter-text">
+        Now create your own Jotform - It's free!
+      </span>
+            <a class="formFooter-button" href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=221006907023544&utm_content=jotform_button&utm_campaign=powered_by_jotform_le" target="_blank">Create your own Jotform</a>
+        </div>
+    </div>
+</form>
+<script src="script.js"></script>
+<script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.32527"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.32527"></script>
